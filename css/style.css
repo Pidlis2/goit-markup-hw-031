@@ -111,10 +111,6 @@ body {
   background-color: var(--secondary-background-color);
 }
 
-.footer {
-  background-color: var(--first-background-color);
-}
-
 .txt-web-logo {
   color: var(--button-color);
 }
@@ -192,6 +188,8 @@ body {
 .model-btn:focus {
   background-color: var(--button-color);
   color: var(--third-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .model-btn {
   font-weight: 500;
@@ -200,6 +198,11 @@ body {
   background-color: var(--secondary-background-color);
   cursor: pointer;
   letter-spacing: 0.03em;
+  border-radius: 4px;
+  min-width: 128px;
+  height: 38px;
+  padding: 6px 22px;
+  display: inline-block;
 }
 
 .skill-list {
@@ -260,6 +263,7 @@ body {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
 }
 
 .team-skill-txt {
@@ -277,15 +281,26 @@ body {
 .team-list {
   display: flex;
   margin-left: var(--mr-left_s);
-  padding-bottom: var(--pd-bt-tp);
+  padding-bottom: 106px;
 }
 .team-list-item {
   margin-left: var(--mr-left);
   flex-basis: calc(100% / 4 - 30px);
 }
+.team-card-txt {
+  border: 1px solid #eee;
+  border-top: none;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: var(--third-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
 
 .footer-mail-link {
   color: var(--adress-link-color);
+  margin-bottom: 9px;
 }
 .footer-mail-link,
 .address,
@@ -297,6 +312,17 @@ body {
   letter-spacing: 0.03em;
 
   color: var(--adress-link-color);
+}
+
+.footer-mail-link,
+.footer-tel-link {
+  display: block;
+}
+
+.footer {
+  background-color: var(--first-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .project-title {
@@ -318,6 +344,22 @@ body {
 .address {
   font-style: normal;
   color: var(--third-color);
+  margin-top: 20px;
+  margin-bottom: 9px;
 }
 
-.
+.port_btn {
+  display: flex;
+  justify-content: center;
+  padding-top: var(--pd-bt-tp);
+  padding-bottom: var(--pd-ttl);
+}
+
+.our_project-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: calc(100% / 9 - 30px);
+}
+
+.our_project:not(:last-child) {
+}
